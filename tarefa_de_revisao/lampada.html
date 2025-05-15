@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Controle de Lâmpada</title>
+    <script>
+       function trocarLampada() {
+            const lampada = document.getElementById("lampada");
+            if (lampada.src.includes("lampada-off.jpg")) {
+                lampada.src = "lampada-on.jpg";
+            } else {
+                lampada.src = "lampada-off.jpg";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Controle de Lâmpada</h1>
+    <img id="lampada" src="lampada-off.jpg" alt="Lâmpada" onclick="trocarLampada()">
