@@ -17,7 +17,6 @@ const calculadora = {
   bufferTextoElemento: bufferElemento, // DIV buffer
   displayTextoElemento: displayElemento, // DIV display
 };
-fhgjjhg
 
 // Botão AC
 btnAC.addEventListener("click", () => {
