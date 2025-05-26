@@ -5,11 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
 </head>
 <body>
-
-    <h1>Teste</h1>
+    <h1 class="title">Biblioteca Brasil</h1>
+    <form class="boxbox">
+        <div>
+            <label for="isbn">ISBN:</label>
+            <input type="number" id="isbn" name="isbn" placeholder="Digite o ISBN" required>
+            <button type="button" onclick="buscarIsbn()">Buscar</button>
+        </div>
+        <div>
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo" placeholder="Título" required>
+        </div>
+        <div>
+            <label for="autor">Autor(a):</label>
+            <input type="text" id="autor" name="autor" placeholder="Autor(a)" required>
+        </div>
+        <div>
+            <label for="editora">Editora:</label>
+            <input type="text" id="editora" name="editora" placeholder="Editora" required>
+        </div>
+        <div>
+            <label for="ano">Ano de Publicação:</label>
+            <input type="text" id="ano" name="ano" placeholder="Ano de Publicação" required>
+        </div>
+        <div>
+            <label for="paginas">Número de Páginas:</label>
+            <input type="text" id="paginas" name="paginas" placeholder="Número de Páginas" required>
+        </div>
+    </form>
     
 </body>
 </html>

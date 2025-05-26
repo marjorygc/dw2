@@ -20,7 +20,7 @@ function buscarCep(){
 
         })
 
-        . catch((eeror) => {
+        . catch((error) => {
             alert("Erro ao buscar o CEP!")
         })        
 
