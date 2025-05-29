@@ -8,34 +8,46 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
-    <h1 class="title">Biblioteca Brasil</h1>
-    <form class="boxbox">
-        <div>
-            <label for="isbn">ISBN:</label>
+    <div class="container">
+        <div class="boxbox">
+        <div class="title">
+            <h1>Biblioteca Brasil</h1>
+        </div>
+        <div class="formulario">
+        <form>
+            <div class="labelBuscar">
+                <label for="isbn">ISBN:</label>
+            </div>
+        <div class="buscar">
             <input type="number" id="isbn" name="isbn" placeholder="Digite o ISBN" required>
             <button type="button" onclick="buscarIsbn()">Buscar</button>
         </div>
         <div>
-            <label for="titulo">Título:</label>
+            <label for="titulo">Título:</label><br>
             <input type="text" id="titulo" name="titulo" placeholder="Título" required>
         </div>
         <div>
-            <label for="autor">Autor(a):</label>
+            <label for="autor">Autor(a):</label><br>
             <input type="text" id="autor" name="autor" placeholder="Autor(a)" required>
         </div>
         <div>
-            <label for="editora">Editora:</label>
+            <label for="editora">Editora:</label><br>
             <input type="text" id="editora" name="editora" placeholder="Editora" required>
         </div>
         <div>
-            <label for="ano">Ano de Publicação:</label>
+            <label for="ano">Ano de Publicação:</label><br>
             <input type="text" id="ano" name="ano" placeholder="Ano de Publicação" required>
         </div>
         <div>
-            <label for="paginas">Número de Páginas:</label>
+            <label for="paginas">Número de Páginas:</label><br>
             <input type="text" id="paginas" name="paginas" placeholder="Número de Páginas" required>
         </div>
     </form>
+        </div>
+    </div>
+    </div>
+    
+    
     
 </body>
 </html>
