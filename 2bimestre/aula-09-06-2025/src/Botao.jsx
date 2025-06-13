@@ -1,7 +1,11 @@
-function Botao(){
+
+import Calculadora from "./Calculadora";
+
+function Botao({peso, altura, setResultado, setCategoria}){
+    
     return(
         <div>
-            <button onClick={Contador()}></button>
+            <button onClick={() => Calculadora(peso,altura, setResultado, setCategoria)}>Calcular</button>
         </div>
     )
 }
