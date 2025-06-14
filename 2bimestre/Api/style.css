@@ -19,6 +19,10 @@ body {
     width: 100vw;
 }
 
+.caixa{
+    width: 450px;
+}
+
 .title{
     display: flex;
     justify-content: flex-start;

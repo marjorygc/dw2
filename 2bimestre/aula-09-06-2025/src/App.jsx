@@ -11,23 +11,27 @@ function App() {
     const [categoria, setCategoria] = useState('');
 
     return(
-    <div>
-        <h1>Calculadora de IMC</h1>
+    <div class = "container">
+        <div class="caixa">
+            <h1>Calculadora de IMC</h1>
+        <label>Digite seu peso: </label>
         <input 
         type="number"  
         value={peso}
         onChange={(e) => setPeso(e.target.value)}
         />
+        <label>Digite sua altura: </label>
         <input 
         type="number" 
         value={altura}
         onChange={(e) => setAltura(e.target.value)}
         />
         <Botao peso = {peso} altura = {altura} setResultado = {setResultado} setCategoria = {setCategoria}/>
-        <div>
+        <div class = "respostas">
         <p>{resultado}</p>
         <p>{categoria}</p>
        </div>
+        </div>
     </div>
     )
 }
