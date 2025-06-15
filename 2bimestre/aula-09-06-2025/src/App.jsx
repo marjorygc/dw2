@@ -12,8 +12,7 @@ function App() {
 
     return(
     <div class = "container">
-        <div class="caixa">
-            <h1>Calculadora de IMC</h1>
+        <h1>Calculadora de IMC</h1>
         <label>Digite seu peso: </label>
         <input 
         type="number"  
@@ -27,11 +26,12 @@ function App() {
         onChange={(e) => setAltura(e.target.value)}
         />
         <Botao peso = {peso} altura = {altura} setResultado = {setResultado} setCategoria = {setCategoria}/>
-        <div class = "respostas">
-        <p>{resultado}</p>
-        <p>{categoria}</p>
-       </div>
+        {resultado && categoria && (
+        <div className="respostas">
+            <p>Seu IMC é: {resultado}</p>
+            <p>Categoria: {categoria}</p>
         </div>
+        )}
     </div>
     )
 }

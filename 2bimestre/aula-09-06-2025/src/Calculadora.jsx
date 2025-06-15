@@ -1,6 +1,14 @@
 
 
 function Calculadora(peso, altura, setResultado, setCategoria){
+    if(!peso.trim() || !altura.trim()){
+        alert("Um dos campos não foi preenchido corretamente, por favor preencha o campo vazio.")
+        return
+    }
+    if(peso <= 0 || altura <= 0 ){
+        alert("Valores inválidos, por favor confira se os valores para peso e altura estão corretos.")
+        return
+    }
 
     let imc = peso / Math.pow(altura, 2)
     setResultado (peso / Math.pow(altura, 2))
