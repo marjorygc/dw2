@@ -28,7 +28,7 @@ function App() {
         <Botao peso = {peso} altura = {altura} setResultado = {setResultado} setCategoria = {setCategoria}/>
         {resultado && categoria && (
         <div className="respostas">
-            <p>Seu IMC é: {resultado}</p>
+            <p>Seu IMC: {resultado}</p>
             <p>Categoria: {categoria}</p>
         </div>
         )}
