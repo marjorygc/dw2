@@ -13,9 +13,14 @@ function App() {
   }
 
   const concluirTarefa = (id) => {
-    arr_tarefas.map((tarefa) => tarefa.id === id ? {...arr_tarefas, concluida: !tarefa.concluida}: tarefa)
-  }
-
+    setTarefas(
+      arr_tarefas.map((tarefa) =>
+        tarefa.id === id ? { ...tarefa, concluida: !tarefa.concluida } : tarefa
+      )
+    );
+  };
+  
+  
   const removerTarefa = (id) => {
     setTarefas(arr_tarefas.filter((tarefa) => tarefa.id !== id))
   }
