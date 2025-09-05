@@ -1,0 +1,9 @@
+{
+  "files.autoSave": "afterDelay",
+  "[javascriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "files.eol": "\n"
+}
